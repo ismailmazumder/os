@@ -1,0 +1,9 @@
+//The bootloader resides in the first 512 bytes of the disk, known as the MBR. This sector comprises:
+
+// 446 bytes for the bootloader code
+
+// 64 bytes for the partition table
+
+// 2 bytes for the boot signature (0xAA55)
+// Disk: [MBR (512 bytes, including bootloader)] [Other sectors/partitions].
+// Memory: [0x0000:7C00h ← MBR bootloader loaded here] [Other memory regions].
