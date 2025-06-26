@@ -48,8 +48,8 @@ game_start:
     
 delay:
     push cx
-    mov cx, 0xFFFF    ; বড় লুপ মান (কমাতে পারো যদি দ্রুত চাই)
-.loop:
+    mov cx, 0xFFFF
+.loop:    ; cx er magic cx 0 na hwa porjonto loop colte thakbe
     loop .loop
     pop cx
     ret
